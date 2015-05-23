@@ -1,10 +1,11 @@
 doctype html
 html(ng-app='myapp')
   head
+    base(href='/')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-  body(ng-controller='Main')
+  body
     include partials/nav
     div(ng-view)
     block content
@@ -13,3 +14,5 @@ html(ng-app='myapp')
     script(src='javascripts/angular.js')
     script(src='javascripts/angular-route.js')
     script(src='javascripts/bootstrap.min.js')
+    script(src='app/app.js')
+    script(src='app/controllers.js')
