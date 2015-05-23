@@ -12,3 +12,4 @@
 // Include module with every page's ng-directive
 // include same code with different controller with every page in ONE app
 // $scope is almost DOM 
+
